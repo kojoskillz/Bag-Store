@@ -343,7 +343,9 @@ textarea{
 .gallery_text{
    font-family: "Bebas Neue", sans-serif;
    color: #FFFFFF;
-   font-size: 120px;
+   font-size: 65px;
+   text-wrap: wrap;
+   flex-wrap: wrap;
 }
 
 .my-gallery{
@@ -371,6 +373,7 @@ textarea{
     display: flex;
     flex-direction: row;
     margin-left: 500px;
+
 }
 .details h2{
     font-size: 40px;
@@ -497,7 +500,7 @@ footer{
 }
 
 
-@media screen and (max-width:420px){
+@media screen and (max-width:720px){
     .ul_nav li{
         display: none;
     }
@@ -650,7 +653,7 @@ footer{
 
 .abt{
     display: grid;
-    margin-bottom: 40px;
+  
     padding: 30px;
     background-color: black;
     display: flex;
@@ -676,14 +679,50 @@ footer{
     place-content: center;
 }
 .abt-container img{
-    
-    height: 650px;
+    width: 333px;
+    height: 350px;
+    margin-left: 10px;
+    object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.658) 1px 25px 30px;
 }
 
-.imgh{
-    position: absolute;
-    width: 20px;
+.about_txt{
+    margin: auto;
+    text-align: center;
+    margin-left: 4rem;
+    padding-bottom: 64rem;
 }
+
+.about_Y{
+    position: absolute;
+}
+
+.imgh{
+    width: 20px;
+     margin-top: -75rem;
+     left: 40%;
+    }
+
+.details{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-column-gap:0px;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+}
+
+
+
+.loc{
+    margin-right: 1.4rem;
+}
+
+
+.info{
+    font-size: 33rem;
+}
+
 
 }
